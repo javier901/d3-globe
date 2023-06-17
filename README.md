@@ -9,7 +9,7 @@ Using d3.js library to plot high-detail points in a 3D Globe. The dataset used f
 5. Detailed comments and well-structured code for easy understanding and modification.
 
 ### Demo
-
+https://github.com/ben-tiki/d3_globe_points/assets/101474762/c240c8a1-45af-460a-bec1-0d64b10a5d00
 
 ### Data Sources
  - data/globeCoordinates.json - Contains the geographical coordinates needed for the globe
