@@ -1,37 +1,37 @@
-# Draggable 3D Globe
+# Interactive 3D Globe with d3.js
+Using d3.js library to plot high-detail points in a 3D Globe. The dataset used for this visualization is the World Airports Dataset provided by [patrow.net](https://www.partow.net/miscellaneous/airportdatabase/).
 
-Using d3 library to generate a choropleth map on a rotating draggable globe. The dataset used for this visualization is the World Airports Dataset provided by: [patrow.net](https://www.partow.net/miscellaneous/airportdatabase/).
+### Main Features
+1. Tooltip that displays the country name and flag.
+2. Drag and rotate features for the globe.
+3. Point plotting at every latitude and longitude coordinate.
+4. Mouse-over and mouse-out events that highlight the country.
+5. Detailed comments and well-structured code for easy understanding and modification.
+
+### Demo
 
 
+### Data Sources
+ - data/globeCoordinates.json - Contains the geographical coordinates needed for the globe
+ - data/locationsData.json - Contains the airport data (latitude and longitude coordinates)
+ - img/flags/ - Contains flags of different countries
 
-## Usage:![d3_point_plotting](https://user-images.githubusercontent.com/101474762/185768551-8e4a6909-bd66-4d6b-8e3f-05d28318b129.gif)
+### Customization:
+**Dots Color**: The color of the dots can be changed by updating the DOT_COLOR constant.
 
-Git clone the repository and open the globe.html file.
+**Globe Interaction**: The sensitivity of the globe's drag and rotate features can be changed by adjusting the ROTATION_SENSITIVITY constant.
 
-In order to use your own information, please update the locations_data.json
+**Tooltip Information**: If you want to include new information in the tooltip, you can update the countryDict object inside the mouseover event handler.
 
-## Personalization:
-The color of the dots can be updated by changing the "#850101" on the dotColor variable
-```javascript
-const dotColor ="#850101"
+**Location Data**: If you want to use your own information, please update the locationsData.json file. The format of the file should be as follows (coordinates in degrees):
+```
+[
+  {"latitude":-6.082,"longitude":145.392},
+  {"latitude":-5.207,"longitude":145.788},
+  {"latitude":-5.826,"longitude":144.296},
+  ...
+]
 ```
 
-Globe dragging and rotating speed can be updated by modyfing the following variable
-
-```javascript
- // defining the rotation and dragging sensitivity of the globe
-const sensitivity = 80
-```
-
-Tootlip values can be modyfied by updating the following code block
-
-```javascript
-// adding the data to the tooltip with desired formatting
-tooltip.html(
-
-            "<b>" + country_name + "</b>" + " " + 
-            // open flag icon based on the country name
-            "<img src='https://countryflagsapi.com/png/" + country_code + "'" + "width=" + "20" + "height=" + "15" + "margin-top=100px" + ">"
-
-)
-```
+### Acknowledgments
+This project is based on the original code by Michael Keith, which can be found [here](https://observablehq.com/@michael-keith/draggable-globe-in-d3). 

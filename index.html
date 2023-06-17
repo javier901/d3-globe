@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A visualization of the world airports.">
+    <link rel="stylesheet" href="css/style.css">
+    <title>World Airports Visualization</title>
+    <link rel="icon" href="img/globe.ico">
+</head>
+<body>
+    <div id="header">
+        <h1 id="page-title">World Airports Visualization</h1>
+    </div>
+    
+    <div id="globe-container"></div>
+
+    <div id="tooltip" style="display: none;">
+        <div id="name-flag-container">
+            <b><span id="tooltip-country-name"></span></b>
+            <img id="tooltip-flag"></img>
+        </div>
+    </div>
+
+    <!-- IMPORT D3 V.5 -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="js/index.js" defer></script>
+</body>
+</html>
