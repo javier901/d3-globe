@@ -1,15 +1,9 @@
-# Interactive 3D Globe with d3.js
-Using d3.js library to plot high-detail points in a 3D Globe. The dataset used for this visualization is the World Airports Dataset provided by [patrow.net](https://www.partow.net/miscellaneous/airportdatabase/).
-
 ### Main Features
 1. Tooltip that displays the country name and flag.
 2. Drag and rotate features for the globe.
 3. Point plotting at every latitude and longitude coordinate.
 4. Mouse-over and mouse-out events that highlight the country.
 5. Detailed comments and well-structured code for easy understanding and modification.
-
-### Demo
-https://github.com/ben-tiki/d3_globe_points/assets/101474762/c240c8a1-45af-460a-bec1-0d64b10a5d00
 
 ### Data Sources
  - data/globeCoordinates.json - Contains the geographical coordinates needed for the globe
@@ -32,6 +26,3 @@ https://github.com/ben-tiki/d3_globe_points/assets/101474762/c240c8a1-45af-460a-
   ...
 ]
 ```
-
-### Acknowledgments
-This project is based on the original code by Michael Keith, which can be found [here](https://observablehq.com/@michael-keith/draggable-globe-in-d3). 
